@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*::selection {
+  color: #ffffff;
+  background-color: #28a745;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28a745;
+  border-radius: 5px 0px 0px 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #252525;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #28a745;
+}
+header img {
+  width: 180px;
+  transition: all 0.3s;
+}
+header img:hover {
+  opacity: 0.9;
+}
+
+.navbar {
+  background-color: #eeeeee !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section#inicio {
+  margin-top: 40px;
+}
+section#inicio h2, section#inicio p {
+  color: #252525;
+}
+
+section#home {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 8rem;
+}
+
+section#home .content h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+section#home .content h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+section#home .content h1 b {
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+section#home .content h1 span {
+  font-size: 3rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #28a745;
+}
+
+section#home .content p {
+  margin-bottom: 2rem;
+}
+
+section#home p {
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+
+section#home .image {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+section#home .image img {
+  max-width: 600px;
+  margin: auto;
+}
+
+@media (width < 900px) {
+  section#home {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  section#home .image {
+    display: none;
+  }
+}
+section#beneficios {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+section#banners {
+  margin-top: 50px;
+}
+section#banners .carousel-inner {
+  margin-top: 30px;
+  max-height: 400px;
+  overflow: hidden;
+}
+section#banners .carousel-inner img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-energy {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.grid-energy .card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.grid-energy .card h4 {
+  margin-bottom: 0.5rem;
+  color: #28a745;
+}
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+#scrollToTop:hover {
+  background-color: rgb(30.1449275362, 125.8550724638, 52);
+}
+#scrollToTop i {
+  font-size: 1.5rem;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=styles.css.map */
